@@ -26,29 +26,29 @@ Third Simple RobotFrameork Test
 Fourth Simple RobotFrameork Test
     Log    Hello World 4...
 
-# First Selenium Test
-#     Open Browser    https://www.google.com    chrome
-#     Set Browser Implicit Wait    5
-#     Input Text    name=q   Automation step by step
-#     Press Key    name=btnK     ENTER
-#     Sleep    2
-#     Close Browser
-#     Log    Test Completed
+First Selenium Test
+    Open Browser    https://www.google.com    chrome
+    Set Browser Implicit Wait    5
+    Input Text    name=q   Automation step by step
+    Press Key    name=btnK     ENTER
+    Sleep    2
+    Close Browser
+    Log    Test Completed
 
-# Sample Login Test with Variable Types
-#     Open Browser    ${URL}    chrome
-#     Maximize Browser Window
-#     Wait Until Element Is Visible    name=username    10s 
-#     LoginKW
-#     Wait Until Element Is Visible    //*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/span/p
-#     Click Element    xpath=//*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/span/p
-#     Click Element    xpath=//*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/ul/li[4]/a
-#     Title Should Be    OrangeHRM
-#     Close Browser
-#     Log    Test Completed
-#     ${user}=    Get Current User
-#     ${os}=     Get Current OS
-#     Log    This test was executed by ${user} on ${os}.
+Sample Login Test with Variable Types
+    Open Browser    ${URL}    chrome
+    Maximize Browser Window
+    Wait Until Element Is Visible    name=username    10s 
+    LoginKW
+    Wait Until Element Is Visible    //*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/span/p
+    Click Element    xpath=//*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/span/p
+    Click Element    xpath=//*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/ul/li[4]/a
+    Title Should Be    OrangeHRM
+    Close Browser
+    Log    Test Completed
+    ${user}=    Get Current User
+    ${os}=     Get Current OS
+    Log    This test was executed by ${user} on ${os}.
 
 *** Variables ***
 ${URL}    https://opensource-demo.orangehrmlive.com 
